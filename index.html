@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algo Visualizer</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+      rel="stylesheet"
+    />
+
+    
+</head>
+<body>
+    <h1>Sorting Algo Visualizer </h1>
+    <p>by Yugank Rai</p>
+
+     <div class=" d-flex justify-content-center mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Your first navigation bar content here -->
+                <button type="button" class="btn btn-primary " id="newArray">New Array</button>
+             
+               
+                <label id="sliderText" for="size">size</label>
+                <input type="range" min="10" max="100" value="40" class="slider" id="size" oninput="sizeInput(this.value);">
+                <label id="sliderText" for="speed">speed</label>
+                <input type="range" min="0" max="800" value="300" class="slider" id="speed" oninput="speedInput(this.value);">
+                
+                <ul  class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                       <button type="button" class="btn btn-secondary" id="stop1">Bubble Sort</button>
+                    </li>
+                    <li class="nav-item">
+                       <button type="button" class="btn btn-success" id="stop2">Selection Sort</button>
+                    </li>
+                    <li class="nav-item">
+                       <button type="button" class="btn btn-danger" id="stop3">Insertion Sort</button>
+                    </li>
+                    <li class="nav-item">
+                       <button type="button" class="btn btn-warning" id="stop4">Quick Sort</button>
+                    </li>
+                    <li class="nav-item">
+                       <button type="button" class="btn btn-info" id="stop5">Merge Sort</button>
+                    </li>
+                  
+                 </ul>
+
+        
+                   
+            </nav>
+     </div>
+     
+     <div id="bars">
+
+     </div>
+
+     <p class="bgcc">
+      About Sorting  
+
+   </p>
+
+     <main>
+      <div class="container my-5" id="container"></div>
+      <hr>  
+      <div id="sortingDesicription"></div>
+      </main>
+     <hr>
+     <p class="bgcc">
+      Developed by Yugank Rai, Connect with us by below method...
+
+   </p>
+    
+
+
+     <div class=" d-flex justify-content-center mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Your first navigation bar content here -->
+                
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                       <a href="https://www.linkedin.com/in/yugank-rai-46439a259/"><button type="button" class="btn-outline-info">Linkdin</button></a>
+                    </li>
+                    <li class="nav-item">
+                       <button type="button" class=" btn-outline-warning">Email: raiyugank184@gmail.com</button>
+                    </li>
+                    
+                 </ul>
+
+        
+                   
+            </nav>
+     </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+     <script src="sorting/sorting.js"></script>
+
+     <script src="sorting/bubble.js"></script>
+     <script src="sorting/selection.js"></script>
+     <script src="sorting/insertion.js"></script>
+     <script src="sorting/quick.js"></script>
+     <script src="sorting/merge.js"></script>
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"
+   ></script>
+   <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"
+   ></script>
+  
+     
+</body>
+</html>
